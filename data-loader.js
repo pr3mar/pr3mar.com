@@ -28,9 +28,31 @@ async function loadPortfolioData() {
         // Populate contact section
         populateContact(data.personal);
 
+        // Remove inline animation styles that hide content
+        removeAnimationStyles();
+
+        // Dispatch event to notify that data is loaded
+        window.dispatchEvent(new Event('portfolioDataLoaded'));
+
     } catch (error) {
         console.error('Error loading portfolio data:', error);
     }
+}
+
+function removeAnimationStyles() {
+    // Remove inline styles that hide sections
+    const sections = document.querySelectorAll('section[style]');
+    sections.forEach(section => {
+        section.style.opacity = '';
+        section.style.transform = '';
+    });
+
+    // Remove styles from animated elements
+    const animatedElements = document.querySelectorAll('[data-animate]');
+    animatedElements.forEach(el => {
+        el.style.opacity = '';
+        el.style.transform = '';
+    });
 }
 
 function populatePersonalInfo(personal) {
@@ -59,11 +81,17 @@ function populateAbout(about) {
 
 function populateExperience(experiences) {
     const timeline = document.querySelector('.timeline');
+
+    if (!timeline) {
+        console.error('Timeline element not found!');
+        return;
+    }
+
     timeline.innerHTML = '';
 
-    experiences.forEach(exp => {
+    experiences.forEach((exp, index) => {
         const item = document.createElement('div');
-        item.className = 'timeline-item';
+        item.className = 'timeline-item visible';
         item.setAttribute('data-animate', 'timeline');
 
         const descriptionItems = exp.description.map(desc => `<li>${desc}</li>`).join('');
@@ -97,7 +125,7 @@ function populateEducation(education) {
 
     education.forEach(edu => {
         const card = document.createElement('div');
-        card.className = 'glass-card education-card mb-4';
+        card.className = 'glass-card education-card mb-4 visible';
         card.setAttribute('data-animate', 'card');
 
         card.innerHTML = `
@@ -131,7 +159,7 @@ function populateCertifications(certifications) {
 
     certifications.forEach((cert, index) => {
         const card = document.createElement('div');
-        card.className = `glass-card cert-card${index < certifications.length - 1 ? ' mb-3' : ''}`;
+        card.className = `glass-card cert-card${index < certifications.length - 1 ? ' mb-3' : ''} visible`;
         card.setAttribute('data-animate', 'card');
 
         const content = cert.instructor
@@ -159,7 +187,7 @@ function populateProjects(projects) {
 
     projects.forEach(project => {
         const card = document.createElement('div');
-        card.className = 'glass-card project-card';
+        card.className = 'glass-card project-card visible';
         card.setAttribute('data-animate', 'card');
 
         let contentHTML = project.description;

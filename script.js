@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
 
-  console.log('Mobile menu elements:', { navToggle, navMenu, found: !!(navToggle && navMenu) });
-
   // Add scroll effect to navbar
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
@@ -22,9 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Mobile menu toggle
   if (navToggle && navMenu) {
-    console.log('Adding click listener to mobile menu toggle');
     navToggle.addEventListener('click', () => {
-      console.log('Mobile menu clicked!');
       navToggle.classList.toggle('active');
       navMenu.classList.toggle('active');
     });
