@@ -1,0 +1,146 @@
+{
+    "personal": {
+        "name": "Marko Prelevic",
+        "title": "Data Scientist & Analytics Expert",
+        "email": "marko.prelevikj@gmail.com",
+        "phone": "+38640567362",
+        "location": "Copenhagen, Denmark",
+        "github": "pr3mar",
+        "linkedin": "mprelevic",
+        "languages": [
+            "Macedonian",
+            "English",
+            "Slovene",
+            "Serbo-Croatian"
+        ]
+    },
+    "hero": {
+        "description": "Data is my passion"
+    },
+    "about": {
+        "subtitle": "Curious by nature, eager to dive deep into problems to break them down and build improved solutions",
+        "professionalSummary": "I specialize in combining expertise in Python, SQL, and cloud computing to enhance business metrics and product performance. My experience spans mobile gaming analytics, digital advertising optimization, and natural language processing for Slavic languages. With over 5 years in the field, I've worked across diverse domains from real-time bidding platforms to mobile gaming LiveOps, always focusing on data-driven decision making and measurable impact.",
+        "technicalExpertise": {
+            "coreSkills": "Python, SQL, Machine Learning, A/B Testing, Product Analytics",
+            "specializations": "Cloud Computing, NLP, Real-time Bidding Systems, Data Pipelines, Statistical Analysis"
+        },
+        "interests": "Passionate about turning complex data into actionable insights. I enjoy tackling challenging problems in mobile gaming analytics and building robust experimentation frameworks. Always eager to learn new technologies and methodologies to improve data-driven decision making."
+    },
+    "experience": [
+        {
+            "date": "September 2025 - Present",
+            "title": "Data Analyst",
+            "company": "Tactile Games",
+            "location": "Copenhagen, Denmark",
+            "description": [
+                "Part of the data analytics team focusing on the LiveOps performance of Lily's Garden"
+            ]
+        },
+        {
+            "date": "July 2023 - January 2025",
+            "title": "Data Scientist",
+            "company": "Outfit7",
+            "location": "Ljubljana, Slovenia",
+            "description": [
+                "Lead product analytics initiatives focusing on app performance optimization",
+                "Designed and conducted reliable A/B tests to help stakeholders make informed decisions"
+            ]
+        },
+        {
+            "date": "March 2021 - June 2023",
+            "title": "Data Scientist",
+            "company": "Outbrain",
+            "location": "Ljubljana, Slovenia",
+            "description": [
+                "Engineered new features for CTR/CVR models",
+                "Enhanced the performance of the real-time bidding platform"
+            ]
+        },
+        {
+            "date": "October 2020 - March 2021",
+            "title": "Researcher",
+            "company": "Laboratory for Cognitive Modeling",
+            "location": "Ljubljana, Slovenia",
+            "description": [
+                "Worked on NLP tasks for the Slovene language as part of <a href=\"https://slovenscina.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">RSDO</a>",
+                "Developed NER model now live at <a href=\"https://slovenscina.eu/prepoznavanje-imenskih-entitet\" target=\"_blank\" rel=\"noopener noreferrer\">slovenscina.eu</a>"
+            ]
+        },
+        {
+            "date": "September 2018 - August 2020",
+            "title": "Data Analytics Intern",
+            "company": "Celtra",
+            "location": "Ljubljana, Slovenia",
+            "description": [
+                "Managed data pipelines including storage, analysis, and serving",
+                "Contributed to data-related decisions and component ownership"
+            ]
+        },
+        {
+            "date": "March 2017 - August 2018",
+            "title": "Solution Architect",
+            "company": "IoT Startup",
+            "location": "Remote",
+            "description": [
+                "Designed data aggregation and analysis tools for IoT trackers",
+                "Built the system architecture from the ground up"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "degree": "Master's in Computer Science",
+            "institution": "University of Ljubljana",
+            "period": "2017 - 2020",
+            "thesis": "Data-Driven Project Management",
+            "mentor": "Jure Demšar",
+            "link": "https://repozitorij.uni-lj.si/Dokument.php?id=133729&lang=slv"
+        },
+        {
+            "degree": "Bachelor's in Computer Science",
+            "institution": "University of Ljubljana",
+            "period": "2013 - 2017",
+            "thesis": "Generalization analysis of semantic segmentation with deep filter banks",
+            "mentor": "Matej Kristan, Vaclav Hlavac",
+            "link": "https://repozitorij.uni-lj.si/Dokument.php?id=99534&lang=slv"
+        }
+    ],
+    "certifications": [
+        {
+            "title": "Neural Networks for Machine Learning",
+            "institution": "University of Toronto",
+            "year": "2016",
+            "instructor": "Geoffrey Hinton"
+        },
+        {
+            "title": "CCNA 1 Certificate",
+            "institution": "Cisco Networking Academy",
+            "year": "2013",
+            "description": "Cisco Certified Network Associate certification"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Multilingual NER and Matching",
+            "year": "2021",
+            "description": "Multilingual named entity recognition and matching using BERT and dedupe for Slavic languages",
+            "coauthor": "Slavko Žitnik",
+            "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5UL7954AAAAJ&citation_for_view=5UL7954AAAAJ:9yKSN-GCB0IC"
+        },
+        {
+            "title": "Exchange Semester",
+            "year": "2016",
+            "description": "Studied abroad at Charles University in Prague, Czech Republic, expanding academic horizons and cultural experience."
+        },
+        {
+            "title": "Bytes of Banking Workshop",
+            "year": "2015",
+            "description": "Winner of the Advanced Skill Workshop, demonstrating excellence in financial technology and data analytics applications."
+        },
+        {
+            "title": "Web Design Competition",
+            "year": "2013",
+            "description": "First Prize at Web Design Competition organized by Narodna Tehnika Makedonija, showcasing early technical skills and creativity."
+        }
+    ]
+}

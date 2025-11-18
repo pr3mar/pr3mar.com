@@ -1,0 +1,30 @@
+# Backup files
+*.backup
+*.bak
+*~
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test files
+test.html
+test*.html
+
+# Build artifacts
+dist/
+build/
+
+*.pdf
+*.tex
