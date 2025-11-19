@@ -117,13 +117,18 @@ function populateExperience(experiences) {
 
 function populateEducation(education) {
   const container = document.querySelector('#education .container');
-  const header = container.querySelector('.section-header');
+  const educationHeader = container.querySelector('.section-header:first-of-type');
 
   // Remove existing education cards
   const existingCards = container.querySelectorAll('.education-card');
   existingCards.forEach(card => card.remove());
 
-  education.forEach(edu => {
+  // Find the certifications header to insert before it
+  const certHeader = container.querySelector('.section-header:last-of-type');
+
+  // Insert education cards in reverse order so they appear in correct order
+  // We insert each one right after the education header
+  education.reverse().forEach(edu => {
     const card = document.createElement('div');
     card.className = 'glass-card education-card mb-4 visible';
     card.setAttribute('data-animate', 'card');
@@ -141,6 +146,14 @@ function populateEducation(education) {
       `;
     } else if (edu.description) {
       contentHTML = edu.description;
+      // Add link if it exists for non-thesis entries
+      if (edu.link) {
+        contentHTML += `
+        <a href="${edu.link}" target="_blank" rel="noopener noreferrer" class="card-link">
+          View Details →
+        </a>
+      `;
+      }
     }
 
     card.innerHTML = `
@@ -154,9 +167,8 @@ function populateEducation(education) {
       </div>
     `;
 
-    // Insert after header and before certifications section
-    const certHeader = container.querySelector('.section-header:last-of-type');
-    container.insertBefore(card, certHeader);
+    // Insert right after the education header
+    educationHeader.insertAdjacentElement('afterend', card);
   });
 }
 
