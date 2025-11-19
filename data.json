@@ -97,6 +97,14 @@
             "link": "https://repozitorij.uni-lj.si/Dokument.php?id=133729&lang=slv"
         },
         {
+            "degree": "Exchange Semester",
+            "institution": "Czech Technical University",
+            "period": "2016-2017",
+            "mentor": "Vaclav Hlavac",
+            "description": "Studied abroad in Prague, Czech Republic, wrote my thesis on generalization analysis of semantic segmentation with deep filter banks",
+            "link": "https://repozitorij.uni-lj.si/Dokument.php?id=99534&lang=eng"
+        },
+        {
             "degree": "Bachelor's in Computer Science",
             "institution": "University of Ljubljana",
             "period": "2013 - 2017",
@@ -126,11 +134,6 @@
             "description": "Multilingual named entity recognition and matching using BERT and dedupe for Slavic languages",
             "coauthor": "Slavko Žitnik",
             "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5UL7954AAAAJ&citation_for_view=5UL7954AAAAJ:9yKSN-GCB0IC"
-        },
-        {
-            "title": "Exchange Semester",
-            "year": "2016",
-            "description": "Studied abroad at Charles University in Prague, Czech Republic, expanding academic horizons and cultural experience."
         },
         {
             "title": "Bytes of Banking Workshop",
